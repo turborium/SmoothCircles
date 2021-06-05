@@ -1,0 +1,39 @@
+object FormMain: TFormMain
+  Left = 0
+  Top = 0
+  Caption = 'FormMain'
+  ClientHeight = 512
+  ClientWidth = 719
+  Color = clBtnFace
+  DoubleBuffered = True
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnKeyUp = FormKeyUp
+  PixelsPerInch = 96
+  TextHeight = 13
+  object PaintBox: TPaintBox
+    Left = 0
+    Top = 0
+    Width = 719
+    Height = 512
+    Align = alClient
+    OnMouseMove = PaintBoxMouseMove
+    OnPaint = PaintBoxPaint
+    ExplicitLeft = 176
+    ExplicitTop = 144
+    ExplicitWidth = 105
+    ExplicitHeight = 105
+  end
+  object Timer: TTimer
+    Interval = 33
+    OnTimer = TimerTimer
+    Left = 352
+    Top = 264
+  end
+end
